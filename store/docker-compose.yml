@@ -1,5 +1,5 @@
 services:
   angular-docker:
     build: .
-    environment:
-      - PORT=4201
+    ports:
+      - '4200:4200'
