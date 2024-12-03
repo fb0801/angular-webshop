@@ -13,6 +13,8 @@ https://www.toptal.com/developers/gitignore/
 
 https://www.youtube.com/watch?v=Kbauf9IgsC4
 
+original repo -> https://github.com/bobangajicsm/E-Commerce-Store
+
 https://dev.to/rodrigokamada/creating-and-running-an-angular-application-in-a-docker-container-40mk
 
 https://medium.com/@anjnkmr/dockerizing-angular-a-practical-approach-to-development-aaa31ebcb7bc
