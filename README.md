@@ -1,10 +1,12 @@
 # angular-webshop
-webshop built using angular, nodejs, typescript, stripe
+webshop built using angular, nodejs, typescript, stripe and docker
 
 ## Issues:
 
 
 ## Changes made:
+
+- Built the project within a docker container
 
 
 
@@ -22,3 +24,5 @@ https://medium.com/@anjnkmr/dockerizing-angular-a-practical-approach-to-developm
 https://www.tatvasoft.com/outsourcing/2024/03/dockerize-angular-app.html
 
 https://docs.docker.com/compose/gettingstarted/
+
+https://tailwindcss.com/docs/installation
