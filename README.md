@@ -3,6 +3,8 @@ webshop built using angular, nodejs, typescript, stripe and docker
 
 ## Issues:
 
+- assigning a port to use
+
 
 ## Changes made:
 
