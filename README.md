@@ -28,3 +28,5 @@ https://www.tatvasoft.com/outsourcing/2024/03/dockerize-angular-app.html
 https://docs.docker.com/compose/gettingstarted/
 
 https://tailwindcss.com/docs/installation
+
+https://stackoverflow.com/questions/63279765/docker-how-to-update-your-container-when-your-code-changes
