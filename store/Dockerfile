@@ -1,12 +1,13 @@
 FROM node:alpine
 
-WORKDIR /usr/src/app
-
-COPY . /usr/src/app
-
+WORKDIR /app
+COPY package.json .
+COPY . .
 RUN npm install -g @angular/cli
 
 RUN npm install
+
+
 
 EXPOSE 4200
 
