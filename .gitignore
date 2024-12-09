@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,angular,react
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,angular,react
+# Created by https://www.toptal.com/developers/gitignore/api/dotenv,node,react,angular
+# Edit at https://www.toptal.com/developers/gitignore?templates=dotenv,node,react,angular
 
 ### Angular ###
 ## Angular ##
@@ -32,6 +32,9 @@ e2e/*.map
 
 # System Files
 .DS_Store/
+
+### dotenv ###
+.env
 
 ### Node ###
 # Logs
@@ -108,7 +111,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -185,4 +187,4 @@ psd
 thumb
 sketch
 
-# End of https://www.toptal.com/developers/gitignore/api/node,angular,react
+# End of https://www.toptal.com/developers/gitignore/api/dotenv,node,react,angular

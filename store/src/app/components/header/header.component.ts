@@ -2,14 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [],
-  template: `
-    <p>
-      header works!
-    </p>
-  `,
-  styles: ``
+  templateUrl: './header.component.html', 
 })
 export class HeaderComponent implements OnInit{
 
