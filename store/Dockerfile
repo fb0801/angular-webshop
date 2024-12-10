@@ -2,12 +2,18 @@ FROM node:alpine
 
 WORKDIR /app
 COPY package.json .
-COPY . .
+
+COPY . ./
+
 RUN npm install -g @angular/cli
 
 RUN npm install
 
+RUN npm run build
 
+FROM nginx:alpine
+
+COPY --from=build /app/dist/angular-webshop/ /usr/share/nginx/html
 
 EXPOSE 4200
 
