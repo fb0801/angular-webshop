@@ -1,5 +1,11 @@
-<mat-toolbar>
+<mat-toolbar class="max-w-7xl mx-auto border-x justify-between">
 
 <a routerLink="home">Store</a>
+<mat-icon
+      [matBadge]="itemsQuantity"
+      [matBadgeHidden]="!itemsQuantity"
+      matBadgeColor="warn"
+      >shopping_cart</mat-icon
+    >
 
 </mat-toolbar>
