@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-filters',
   standalone: true,
   imports: [],
-  template: `
-    <p>
-      filters works!
-    </p>
-  `,
-  styles: ``
+  templateUrl: 'filters.component.html'
 })
 export class FiltersComponent {
+
+categories = ['shoes', 'sports']
+
+constructor() {}
+ngOnInit(): void {
+
+}
 
 }
