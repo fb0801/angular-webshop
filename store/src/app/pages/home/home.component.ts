@@ -11,10 +11,11 @@ export class HomeComponent implements OnInit{
   rowHeight = ROWS_HEIGHT[this.cols]
   category: string | undefined
 
-  constructor(){}
-    ngOnInIt(): void {
+  constructor() { }
 
-    }
+  ngOnInit(): void {
+      
+  }
 
 onColumnsCountChange(colsNum: number): void {
   this.cols= colsNum;
