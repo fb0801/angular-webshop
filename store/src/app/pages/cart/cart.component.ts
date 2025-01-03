@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
-  standalone: true,
-  imports: [],
   template: `
     <p>
       cart works!
@@ -11,6 +9,10 @@ import { Component } from '@angular/core';
   `,
   styles: ``
 })
-export class CartComponent {
+export class CartComponent implements OnInit{
+  constructor() { }
 
+  ngOnInit(): void {
+    
+  }
 }
