@@ -9,6 +9,10 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
   },
+  {
+    path: 'cart',
+    component: CartComponent,
+  },
   
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
