@@ -27,4 +27,8 @@ onShowCategory(newCategory: string): void{
 
 }
 
+onAddToCart(): void {
+  
+}
+
 }
