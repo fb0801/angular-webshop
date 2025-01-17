@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Cart } from 'src/app/models/cart.model';
+//import { Cart } from 'src/app/models/cart.model';
 import { Cart, CartItem } from '../../models/cart.model';
+import { CartService } from '../../services/cart.service';
 //import { Cart } from '../../models/cart.model';
 
 @Component({
@@ -26,7 +27,7 @@ export class CartComponent implements OnInit {
     'action'
   ]
 
-  constructor() { }
+  constructor(private cartService: CartService)  { }
 
   ngOnInit(): void {
     this.dataSource = this.cart.items
@@ -34,9 +35,7 @@ export class CartComponent implements OnInit {
   }
 
 getTotal(items: Array<CartItem>): number {
-  return items.
-  map((item) => item.price * item.quantity)
-  .reduce((prev, current) => prev + current, 0)
+  return this.cartService.getTotal(items)
 }
 
 }
