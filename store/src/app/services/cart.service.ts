@@ -30,4 +30,10 @@ export class CartService {
     map((item) => item.price * item.quantity)
     .reduce((prev, current) => prev + current, 0)
   }
+  clearCart(): void {
+    this.cart.next({ items: [] })
+    this._snackBar.open('Cart is cleared','ok', {
+      duration: 3000
+    })
+  }
 }
