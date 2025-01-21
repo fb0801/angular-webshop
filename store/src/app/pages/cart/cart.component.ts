@@ -46,6 +46,6 @@ onClearCart(): void {
 }
 
 onRemoveFromCart(item: CartItem): void{
-  this.cartService.removeFromCart()
+  this.cartService.removeFromCart(item)
 }
 }
