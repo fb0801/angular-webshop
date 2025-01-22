@@ -28,6 +28,7 @@ import { CartService } from './services/cart.service';
 import { CartComponent } from './pages/cart/cart.component';
 import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
 import { StoreService } from './services/store.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { StoreService } from './services/store.service';
     MatBadgeModule,
     MatSnackBarModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [CartService, StoreService],
   bootstrap: [AppComponent],
