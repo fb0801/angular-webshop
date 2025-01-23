@@ -60,4 +60,14 @@ if(this.productSubscription){
 }
 }
 
+onItemsCountChange(newCount: number): void {
+  this.count = newCount.toString()
+  this.getProducts()
+}
+
+onSortChange(newSort: string): void {
+  this.sort = newSort
+  this.getProducts()
+}
+
 }
