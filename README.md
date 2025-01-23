@@ -36,3 +36,5 @@ https://stackoverflow.com/questions/63279765/docker-how-to-update-your-container
 https://medium.com/@nadir.inab.dev/dockerizing-your-angular-app-a-quick-guide-00a3ecabe419
 
 https://levioconsulting.com/insights/how-to-dockerize-an-angular-application-with-nginx/
+
+https://fakestoreapi.com/
