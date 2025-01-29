@@ -38,3 +38,5 @@ https://medium.com/@nadir.inab.dev/dockerizing-your-angular-app-a-quick-guide-00
 https://levioconsulting.com/insights/how-to-dockerize-an-angular-application-with-nginx/
 
 https://fakestoreapi.com/
+
+https://stripe.com/gb

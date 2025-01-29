@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 //import { Cart } from 'src/app/models/cart.model';
 import { Cart, CartItem } from '../../models/cart.model';
 import { CartService } from '../../services/cart.service';
+import { HttpClient } from '@angular/common/http';
+import {loadStripe} from  "@stripe/stripe-js"
 //import { Cart } from '../../models/cart.model';
 
 @Component({
@@ -27,7 +29,7 @@ export class CartComponent implements OnInit {
     'action'
   ]
 
-  constructor(private cartService: CartService)  { }
+  constructor(private cartService: CartService, private http: HttpClient)  { }
 
   ngOnInit(): void {
     this.cartService.cart.subscribe((_cart: Cart) => {
@@ -55,5 +57,16 @@ onAddQuantity(item: CartItem): void {
 
 onRemoveQuantity(item: CartItem): void {
   this.cartService.removeQuantity(item)
+}
+
+onCheckout(): void {
+  this.http.post('http://localhost:4242/checkout', {
+    items: this.cart.items
+  }).subscribe(async(res: any) => {
+    let stripe = await loadStripe('')
+    stripe?.redirectToCheckout({
+      sessionId: res.id
+    })
+  })
 }
 }
